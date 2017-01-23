@@ -27,3 +27,5 @@ INSERT INTO tasks VALUES(DEFAULT, 'mistake 1', 'test entry');
 INSERT INTO tasks VALUES(DEFAULT, 'mistake 2', 'another test entry');
 INSERT INTO tasks VALUES(DEFAULT, 'third mistake', 'another test entry');
 SELECT title, description FROM tasks WHERE title LIKE '%mistake%';
+DELETE FROM tasks WHERE title LIKE '%mistake%';
+SELECT * FROM tasks ORDER BY title;
